@@ -7,7 +7,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
     background: linear-gradient(45deg, #a1c0a1, #dfd0af);
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#relogio{
+    padding: 20px;
 }
 .table{
     width: 400px;
@@ -20,6 +31,15 @@ body{
     border-radius: 20px;
     box-shadow: 2px 2px 5px #999;
     padding: 13px 0;
+    margin: 20px;
+}
+.table .form label{
+    font-weight: 700;
+}
+.table .form input{
+    width: 60px;
+    padding: 4px;
+    border-radius: 10px;
 }
 .btn{
     padding: 10px 25px;

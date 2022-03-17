@@ -8,19 +8,38 @@
     <title>Cronometro</title>
 </head>
 <body>
-    <div class="table">
-        <h2>Cronometro</h2>
-        <div>
-            <button class="btn" onclick="inicio()">Iniciar</button>
-            <button class="btn" onclick="pause()">Pausar</button>
-            <button class="btn" onclick="parar()">Parar</button>
-        </div>
-        <div>
-            <h2 id="relogio">00:00:00</h2>
+    <div>
+        <h2 id="relogio">00:00:00</h2>
+    </div>
+    <div class="main" >
+
+        <div class="table">
+            <h2>Cronometro</h2>
+            <div>
+                <button class="btn" onclick="inicio(true)">Iniciar</button>
+                <button class="btn" onclick="pause(true)">Pausar</button>
+                <button class="btn" onclick="parar(true)">Parar</button>
+            </div>
             
         </div>
-    </div>
-
-    <script src="main.js"></script>
-</body>
+        
+        <div class="table">
+            <h2>Temporizador</h2>
+            <div>
+                <button class="btn" onclick=" setValues(), inicio(false)">Iniciar</button>
+                <button class="btn" onclick="pause()">Pausar</button>
+                <button class="btn" onclick="parar()">Parar</button>
+            </div>
+            <div class="form">
+                <label for="hh">Hora</label>
+                <input type="number" name="hh" id="hh" min="0" max="60" >
+                <label for="mm">Min</label>
+                <input type="number" name="" id="mm" min="0" max="60" >
+                <label for="ss">Seg</label>
+                <input type="number" name="" id="ss" min="0" max="60" >
+            </div>
+        </div>
+              
+        <script src="main.js"></script>
+    </body>
 </html>
